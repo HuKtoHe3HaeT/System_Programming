@@ -1,0 +1,17 @@
+﻿  Main.cpp
+  ShopLibrary.cpp
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.cpp(6,7): warning C4273: Item::Item: несовместимое связывание dll
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.h(12,5): message : см. предыдущее определение "{ctor}"
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.cpp(11,14): warning C4273: Item::CalculateCostPerGram: несовместимое связывание dll
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.h(14,12): message : см. предыдущее определение "CalculateCostPerGram"
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.cpp(17,11): warning C4273: Item::CalculateRemainingLifetime: несовместимое связывание dll
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.h(15,9): message : см. предыдущее определение "CalculateRemainingLifetime"
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.cpp(22,12): warning C4273: Item::DisplayItemInfo: несовместимое связывание dll
+D:\Univirsity\DLLLab_03\DLLLab_03\ShopLibrary.h(16,10): message : см. предыдущее определение "DisplayItemInfo"
+  Создание кода...
+     Создается библиотека D:\Univirsity\DLLLab_03\x64\Debug\DLLLab_03.lib и объект D:\Univirsity\DLLLab_03\x64\Debug\DLLLab_03.exp
+LINK : warning LNK4217: Символ "??0Item@@QEAA@HHHHH@Z (public: __cdecl Item::Item(int,int,int,int,int))", определенный в "ShopLibrary.obj", импортирован "Main.obj" в функции "main".
+LINK : warning LNK4217: Символ "?CalculateCostPerGram@Item@@QEBANXZ (public: double __cdecl Item::CalculateCostPerGram(void)const )", определенный в "ShopLibrary.obj", импортирован "Main.obj" в функции "main".
+LINK : warning LNK4217: Символ "?CalculateRemainingLifetime@Item@@QEBAHXZ (public: int __cdecl Item::CalculateRemainingLifetime(void)const )", определенный в "ShopLibrary.obj", импортирован "Main.obj" в функции "main".
+LINK : warning LNK4217: Символ "?DisplayItemInfo@Item@@QEBAXXZ (public: void __cdecl Item::DisplayItemInfo(void)const )", определенный в "ShopLibrary.obj", импортирован "Main.obj" в функции "main".
+  DLLLab_03.vcxproj -> D:\Univirsity\DLLLab_03\x64\Debug\DLLLab_03.exe
