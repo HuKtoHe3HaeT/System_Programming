@@ -3,6 +3,14 @@
 class Window
 {
 public:
+    int id;
+    int height;
+    int width;
+    int memoryNeeded;
+    bool areAdministatorRightsGranted;
+    bool isShown;
+
+public:
     Window(int id, int height, int width, bool areAdministatorRightsGranted)
         : id(id), height(height), width(width), memoryNeeded(0), areAdministatorRightsGranted(areAdministatorRightsGranted), isShown(false) {}
 
@@ -15,28 +23,22 @@ public:
     {
         isShown = !isShown;
     }
-
-public:
-    int id;
-    int height;
-    int width;
-    int memoryNeeded;
-    bool areAdministatorRightsGranted;
-    bool isShown;
 };
 
 class Settings
 {
-public:
-    Settings(int setting1, int setting2, int setting3, int setting4, int setting5)
-        : setting1(setting1), setting2(setting2), setting3(setting3), setting4(setting4), setting5(setting5) {}
-
 public:
     int setting1;
     int setting2;
     int setting3;
     int setting4;
     int setting5;
+
+public:
+    Settings(int setting1, int setting2, int setting3, int setting4, int setting5)
+        : setting1(setting1), setting2(setting2), setting3(setting3), setting4(setting4), setting5(setting5) {}
+
+
 };
 
 class GameWindow
