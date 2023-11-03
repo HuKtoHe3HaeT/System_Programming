@@ -114,6 +114,11 @@ public:
         std::cout << "Memory needed for CountingTableGameWindow: " << window.memoryNeeded << std::endl;
     }
 };
+void startAllGameWindows(RockPaperScissorsGameWindow& rps, TicTacToeGameWindow& ttt, CountingTableGameWindow& ct) {
+    rps.doAction();
+    ttt.doAction();
+    ct.doAction();
+}
 
 int main()
 {
@@ -125,9 +130,7 @@ int main()
     TicTacToeGameWindow TicTacToe(1, 400, 300, true, TicTacToeSettings);
     CountingTableGameWindow CountingTable(1, 200, 150, true, CountingTableSettings);
 
-    RockPaperScissors.doAction();
-    TicTacToe.doAction();
-    CountingTable.doAction();
+    startAllGameWindows(RockPaperScissors, TicTacToe, CountingTable);
 
     return 0;
 }
